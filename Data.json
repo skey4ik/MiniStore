@@ -1,0 +1,137 @@
+[
+  {
+    "data": {
+      "Name": "Google Chrome",
+      "Icon": "Images/Chrome.ico",
+      "Link": "https://dl.google.com/chrome/install/latest/chrome_installer.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "Firefox",
+      "Icon": "Images/Firefox.png",
+      "Link": "https://download.mozilla.org/?product=firefox-latest&os=win&lang=ru"
+    }
+  },
+  {
+    "data": {
+      "Name": "Discord",
+      "Icon": "Images/Discord.ico",
+      "Link": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64"
+    }
+  },
+  {
+    "data": {
+      "Name": "Telegram",
+      "Icon": "Images/Telegram.png",
+      "Link": "https://telegram.org/dl/desktop/win64"
+    }
+  },
+  {
+    "data": {
+      "Name": "Steam",
+      "Icon": "Images/Steam.ico",
+      "Link": "https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "Epic Games",
+      "Icon": "Images/eg.png",
+      "Link": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi"
+    }
+  },
+  {
+    "data": {
+      "Name": "Ubisoft",
+      "Icon": "Images/ubi.png",
+      "Link": "https://ubi.li/4vxt9"
+    }
+  },
+  {
+    "data": {
+      "Name": "VLC",
+      "Icon": "Images/vlc.png",
+      "Link": "https://get.videolan.org/vlc/last/win64/vlc-3.0.21-win64.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "System Informer",
+      "Icon": "Images/si.ico",
+      "Link": "https://sourceforge.net/projects/systeminformer/files/systeminformer-3.0.7660-release-setup.exe/download"
+    }
+  },
+  {
+    "data": {
+      "Name": "Resource Hacker",
+      "Icon": "Images/rh.ico",
+      "Link": "https://www.angusj.com/resourcehacker/reshacker_setup.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "Visual Studio",
+      "Icon": "Images/vs.ico",
+      "Link": "https://aka.ms/vs/17/release/vs_community.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "Visual Studio Code",
+      "Icon": "Images/vsc.ico",
+      "Link": "https://update.code.visualstudio.com/latest/win32-x64-user/stable"
+    }
+  },
+  {
+    "data": {
+      "Name": "WinRAR",
+      "Icon": "Images/WinRAR.ico",
+      "Link": "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701ru.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "7-Zip",
+      "Icon": "Images/7Zip.ico",
+      "Link": "https://www.7-zip.org/a/7z2407-x64.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "qBittorrent",
+      "Icon": "Images/qBit.png",
+      "Link": "https://sourceforge.net/projects/qbittorrent/files/qbittorrent-win32/qbittorrent-4.6.5/qbittorrent_4.6.5_x64_setup.exe/download"
+    }
+  },
+  {
+    "data": {
+      "Name": "Everything",
+      "Icon": "Images/Everything.ico",
+      "Link": "https://www.voidtools.com/Everything-1.4.1.1024.x64-Setup.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "ShareX",
+      "Icon": "Images/ShareX.png",
+      "Link": "https://github.com/ShareX/ShareX/releases/download/v16.1.0/ShareX-16.1.0-setup.exe"
+    }
+  },
+  {
+    "data": {
+      "Name": "MalwareBytes",
+      "Icon": "Images/Malware.png",
+      "Link": "https://downloads.malwarebytes.com/file/mb-windows"
+    }
+  },
+  {
+    "data": {
+      "Name": "BoosterX",
+      "Icon": "Images/BoosterX.ico",
+      "Link": "https://download.boosterx.org/BoosterX.exe"
+    }
+  }
+
+
+]

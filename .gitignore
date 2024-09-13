@@ -1,0 +1,69 @@
+# Общие файлы и папки, которые не должны быть в репозитории
+bin/
+obj/
+[Bb]uild[Ll]og.*
+.vscode/
+.history/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Файлы NuGet-пакетов
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Автоматически сгенерированные файлы
+*.log
+*.cache
+*.pdb
+*.mdb
+*.ilk
+*.obj
+*.tlog
+*.tmp
+*.vspscc
+*.vssscc
+*.aps
+
+# Конфигурационные файлы, специфичные для среды разработки
+*.DotSettings.user
+*.ide.*
+.idea/
+.vscode/
+
+# Папки для Rider или JetBrains IDE
+.idea/
+.idea/*
+
+# Резервные файлы
+*_Resharper*
+*.ReSharper
+*.resharper
+
+# Файлы настройки среды
+*.vs/
+.vs/
+
+# Сертификаты
+*.pfx
+*.p12
+
+# Файлы настроек сборки
+*.csproj.user
+*.csproj.vspscc
+*.csproj.vssscc
+*.vcxproj.user
+*.vcxproj.filters
+
+# Логи и данные временных файлов
+*.log
+*.dmp
+*.temp
+*.tmp
+
+# Временные файлы для IIS Express
+IISExpress/

@@ -1,0 +1,120 @@
+﻿<Window x:Class="Mini_Store.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        mc:Ignorable="d"
+        Title="Mini Store" Height="450" Width="800" WindowStyle="None" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent" FontSize="18">
+    <Border CornerRadius="5" Background="#FF161D25" BorderBrush="#2681da" BorderThickness="1" MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!--App Title-->
+            <Button Click="StoreButton" HorizontalAlignment="Left" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent" Margin="10 0 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Store" Width="20" Height="20" Foreground="White" Margin="0 5 0 0"/>
+                    <TextBlock Text="Store" Foreground="White" Height="20"/>
+                </StackPanel>
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Opacity" Value="0.5"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Background="{TemplateBinding Background}">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <!--Minimize Button-->
+                <Button HorizontalAlignment="Right" Margin="5" Height="20" Width="20" Background="Transparent" Content="{materialDesign:PackIcon minimize}" Click="Minus_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="#2681da"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect Color="White" ShadowDepth="0" Direction="0" BlurRadius="10"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <!--Close Button-->
+                <Button HorizontalAlignment="Right" Height="20" Width="20" Margin="5" Background="Transparent" Content="{materialDesign:PackIcon Kind=Close}"  Click="Close_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Foreground" Value="#2681da"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Foreground" Value="Red"/>
+                                    <Setter Property="Effect">
+                                        <Setter.Value>
+                                            <DropShadowEffect Color="Red" ShadowDepth="0" BlurRadius="10"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+
+            <Border Grid.Row="1" Background="#FF1B2838" CornerRadius="0 0 5 5">
+                <Grid>
+                    <ScrollViewer>
+                        <WrapPanel x:Name="ButtonPanel" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            
+                        </WrapPanel>
+                    </ScrollViewer>
+                    <Border x:Name="Settings_Border" VerticalAlignment="Top" Visibility="Collapsed" HorizontalAlignment="Left" Margin="5 0 0 0" Background="#FF161D25">
+                        <StackPanel>
+                            <Button Click="Donate_Button" Style="{StaticResource Setting_Buttons}">
+                                <TextBlock Text="Donate" HorizontalAlignment="Left" Width="90" Margin="5 0 0 0"/>
+                            </Button>
+                            <Button Click="Clear_Cache_Button" Style="{StaticResource Setting_Buttons}">
+                                <TextBlock Text="Сlear cache" HorizontalAlignment="Left" Width="90" Margin="5 0 0 0"/>
+                            </Button>
+                            <TextBlock Text="Я Сухофрукт" Foreground="White" FontSize="15" Margin="5 0 0 0" Opacity="0.5"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
