@@ -1,5 +1,5 @@
 ## Mini Store
-![Current Version](https://img.shields.io/badge/version-1.2.2-2681da) ![](https://img.shields.io/badge/By-SKey-white)
+[![Current Version](https://img.shields.io/badge/version-1.2.2-2681da)](https://github.com/skey4ik/MiniStore) [![](https://img.shields.io/badge/By-SKey-white)](https://github.com/skey4ik/MiniStore)
 ![Menu](Menu.png)
 
 ## Функционал
